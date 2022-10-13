@@ -1,0 +1,381 @@
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Oct-2022 17:51:57.806 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+12-Oct-2022 17:51:57.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+12-Oct-2022 17:51:57.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+12-Oct-2022 17:51:57.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Oct-2022 17:51:57.809 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-50-generic
+12-Oct-2022 17:51:57.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Oct-2022 17:51:57.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-17-openjdk-amd64
+12-Oct-2022 17:51:57.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.4+8-Ubuntu-122.04
+12-Oct-2022 17:51:57.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+12-Oct-2022 17:51:57.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:51:57.810 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:51:57.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-Oct-2022 17:51:57.817 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-Oct-2022 17:51:57.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-Oct-2022 17:51:57.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-Oct-2022 17:51:57.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Oct-2022 17:51:57.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/conf/logging.properties
+12-Oct-2022 17:51:57.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Oct-2022 17:51:57.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Oct-2022 17:51:57.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Oct-2022 17:51:57.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Oct-2022 17:51:57.819 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Oct-2022 17:51:57.819 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:51:57.819 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:51:57.819 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/temp
+12-Oct-2022 17:51:57.820 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+12-Oct-2022 17:51:58.010 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Oct-2022 17:51:58.021 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1051)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Endereço já em uso
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:275)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:606)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1048)
+		... 13 more
+12-Oct-2022 17:51:58.021 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [359] milliseconds
+12-Oct-2022 17:51:58.045 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Oct-2022 17:51:58.045 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+12-Oct-2022 17:51:58.050 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/host-manager]
+12-Oct-2022 17:51:58.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/host-manager] has finished in [186] ms
+12-Oct-2022 17:51:58.236 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/docs]
+12-Oct-2022 17:51:58.248 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/docs] has finished in [12] ms
+12-Oct-2022 17:51:58.249 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/manager]
+12-Oct-2022 17:51:58.266 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/manager] has finished in [17] ms
+12-Oct-2022 17:51:58.266 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/ROOT]
+12-Oct-2022 17:51:58.278 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/ROOT] has finished in [12] ms
+12-Oct-2022 17:51:58.279 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/examples]
+12-Oct-2022 17:51:58.450 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/examples] has finished in [172] ms
+12-Oct-2022 17:51:58.457 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [435] milliseconds
+12-Oct-2022 17:51:58.459 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Endereço já em uso
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.Net.bind(Net.java:544)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:580)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+12-Oct-2022 17:51:58.460 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Oct-2022 17:51:58.460 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Oct-2022 17:51:58.474 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Oct-2022 17:51:58.474 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Oct-2022 17:53:05.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+12-Oct-2022 17:53:05.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+12-Oct-2022 17:53:05.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+12-Oct-2022 17:53:05.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Oct-2022 17:53:05.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-50-generic
+12-Oct-2022 17:53:05.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Oct-2022 17:53:05.051 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-17-openjdk-amd64
+12-Oct-2022 17:53:05.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.4+8-Ubuntu-122.04
+12-Oct-2022 17:53:05.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+12-Oct-2022 17:53:05.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:53:05.052 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:53:05.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-Oct-2022 17:53:05.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-Oct-2022 17:53:05.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-Oct-2022 17:53:05.057 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-Oct-2022 17:53:05.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Oct-2022 17:53:05.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/conf/logging.properties
+12-Oct-2022 17:53:05.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Oct-2022 17:53:05.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Oct-2022 17:53:05.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Oct-2022 17:53:05.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Oct-2022 17:53:05.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Oct-2022 17:53:05.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:53:05.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:53:05.058 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/temp
+12-Oct-2022 17:53:05.059 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+12-Oct-2022 17:53:05.253 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Oct-2022 17:53:05.262 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1051)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Endereço já em uso
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:275)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:606)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1048)
+		... 13 more
+12-Oct-2022 17:53:05.264 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [326] milliseconds
+12-Oct-2022 17:53:05.290 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Oct-2022 17:53:05.290 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+12-Oct-2022 17:53:05.294 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/host-manager]
+12-Oct-2022 17:53:05.485 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/host-manager] has finished in [190] ms
+12-Oct-2022 17:53:05.485 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/docs]
+12-Oct-2022 17:53:05.499 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/docs] has finished in [14] ms
+12-Oct-2022 17:53:05.500 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/manager]
+12-Oct-2022 17:53:05.517 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/manager] has finished in [17] ms
+12-Oct-2022 17:53:05.518 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/ROOT]
+12-Oct-2022 17:53:05.533 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/ROOT] has finished in [14] ms
+12-Oct-2022 17:53:05.533 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/examples]
+12-Oct-2022 17:53:05.680 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/examples] has finished in [147] ms
+12-Oct-2022 17:53:05.683 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [419] milliseconds
+12-Oct-2022 17:53:05.686 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Endereço já em uso
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.Net.bind(Net.java:544)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:580)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+12-Oct-2022 17:53:05.686 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Oct-2022 17:53:05.686 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Oct-2022 17:53:05.704 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Oct-2022 17:53:05.706 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Oct-2022 17:53:58.818 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+12-Oct-2022 17:53:58.821 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+12-Oct-2022 17:53:58.821 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+12-Oct-2022 17:53:58.821 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Oct-2022 17:53:58.821 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-50-generic
+12-Oct-2022 17:53:58.821 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Oct-2022 17:53:58.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-17-openjdk-amd64
+12-Oct-2022 17:53:58.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.4+8-Ubuntu-122.04
+12-Oct-2022 17:53:58.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+12-Oct-2022 17:53:58.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:53:58.822 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:53:58.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-Oct-2022 17:53:58.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-Oct-2022 17:53:58.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-Oct-2022 17:53:58.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-Oct-2022 17:53:58.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Oct-2022 17:53:58.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/conf/logging.properties
+12-Oct-2022 17:53:58.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Oct-2022 17:53:58.827 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Oct-2022 17:53:58.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Oct-2022 17:53:58.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Oct-2022 17:53:58.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Oct-2022 17:53:58.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:53:58.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:53:58.828 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/temp
+12-Oct-2022 17:53:58.829 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+12-Oct-2022 17:53:59.057 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Oct-2022 17:53:59.065 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector[HTTP/1.1-8080]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1051)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:556)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1045)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:136)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:724)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:746)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:305)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:475)
+	Caused by: java.net.BindException: Endereço já em uso
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:275)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:230)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1227)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1240)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:606)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1048)
+		... 13 more
+12-Oct-2022 17:53:59.066 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [375] milliseconds
+12-Oct-2022 17:53:59.092 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Oct-2022 17:53:59.092 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+12-Oct-2022 17:53:59.097 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/host-manager]
+12-Oct-2022 17:53:59.271 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/host-manager] has finished in [174] ms
+12-Oct-2022 17:53:59.271 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/docs]
+12-Oct-2022 17:53:59.286 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/docs] has finished in [15] ms
+12-Oct-2022 17:53:59.286 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/manager]
+12-Oct-2022 17:53:59.302 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/manager] has finished in [16] ms
+12-Oct-2022 17:53:59.303 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/ROOT]
+12-Oct-2022 17:53:59.317 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/ROOT] has finished in [15] ms
+12-Oct-2022 17:53:59.317 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/examples]
+12-Oct-2022 17:53:59.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/examples] has finished in [135] ms
+12-Oct-2022 17:53:59.454 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [388] milliseconds
+12-Oct-2022 17:53:59.457 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Endereço já em uso
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:555)
+		at java.base/sun.nio.ch.Net.bind(Net.java:544)
+		at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:643)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:388)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:274)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:580)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:864)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:810)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:476)
+12-Oct-2022 17:53:59.457 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-Oct-2022 17:53:59.457 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-Oct-2022 17:53:59.470 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-Oct-2022 17:53:59.471 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Oct-2022 17:55:39.328 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+12-Oct-2022 17:55:39.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+12-Oct-2022 17:55:39.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+12-Oct-2022 17:55:39.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+12-Oct-2022 17:55:39.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-50-generic
+12-Oct-2022 17:55:39.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-Oct-2022 17:55:39.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-17-openjdk-amd64
+12-Oct-2022 17:55:39.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.4+8-Ubuntu-122.04
+12-Oct-2022 17:55:39.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+12-Oct-2022 17:55:39.331 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:55:39.332 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:55:39.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-Oct-2022 17:55:39.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-Oct-2022 17:55:39.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-Oct-2022 17:55:39.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-Oct-2022 17:55:39.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-Oct-2022 17:55:39.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/conf/logging.properties
+12-Oct-2022 17:55:39.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-Oct-2022 17:55:39.338 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+12-Oct-2022 17:55:39.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+12-Oct-2022 17:55:39.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+12-Oct-2022 17:55:39.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+12-Oct-2022 17:55:39.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:55:39.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+12-Oct-2022 17:55:39.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/temp
+12-Oct-2022 17:55:39.340 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+12-Oct-2022 17:55:39.520 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-Oct-2022 17:55:39.533 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [324] milliseconds
+12-Oct-2022 17:55:39.557 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-Oct-2022 17:55:39.557 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+12-Oct-2022 17:55:39.561 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/host-manager]
+12-Oct-2022 17:55:39.727 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/host-manager] has finished in [166] ms
+12-Oct-2022 17:55:39.727 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/docs]
+12-Oct-2022 17:55:39.740 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/docs] has finished in [13] ms
+12-Oct-2022 17:55:39.740 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/manager]
+12-Oct-2022 17:55:39.758 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/manager] has finished in [18] ms
+12-Oct-2022 17:55:39.758 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/ROOT]
+12-Oct-2022 17:55:39.771 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/ROOT] has finished in [13] ms
+12-Oct-2022 17:55:39.771 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/examples]
+12-Oct-2022 17:55:39.916 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/examples] has finished in [145] ms
+12-Oct-2022 17:55:39.918 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-Oct-2022 17:55:39.925 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [391] milliseconds
+NOTE: Picked up JDK_JAVA_OPTIONS:  --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Oct-2022 12:19:40.003 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.68
+13-Oct-2022 12:19:40.005 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 3 2022 19:06:10 UTC
+13-Oct-2022 12:19:40.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.68.0
+13-Oct-2022 12:19:40.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+13-Oct-2022 12:19:40.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            5.15.0-50-generic
+13-Oct-2022 12:19:40.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+13-Oct-2022 12:19:40.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/lib/jvm/java-17-openjdk-amd64
+13-Oct-2022 12:19:40.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.4+8-Ubuntu-122.04
+13-Oct-2022 12:19:40.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Private Build
+13-Oct-2022 12:19:40.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+13-Oct-2022 12:19:40.006 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+13-Oct-2022 12:19:40.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+13-Oct-2022 12:19:40.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+13-Oct-2022 12:19:40.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+13-Oct-2022 12:19:40.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+13-Oct-2022 12:19:40.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+13-Oct-2022 12:19:40.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/conf/logging.properties
+13-Oct-2022 12:19:40.015 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Oct-2022 12:19:40.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+13-Oct-2022 12:19:40.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Oct-2022 12:19:40.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+13-Oct-2022 12:19:40.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+13-Oct-2022 12:19:40.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+13-Oct-2022 12:19:40.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68
+13-Oct-2022 12:19:40.016 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/temp
+13-Oct-2022 12:19:40.017 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib]
+13-Oct-2022 12:19:40.189 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+13-Oct-2022 12:19:40.203 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [316] milliseconds
+13-Oct-2022 12:19:40.227 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Oct-2022 12:19:40.227 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.68]
+13-Oct-2022 12:19:40.231 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/host-manager]
+13-Oct-2022 12:19:40.402 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/host-manager] has finished in [171] ms
+13-Oct-2022 12:19:40.402 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/docs]
+13-Oct-2022 12:19:40.417 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/docs] has finished in [15] ms
+13-Oct-2022 12:19:40.417 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/manager]
+13-Oct-2022 12:19:40.437 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/manager] has finished in [20] ms
+13-Oct-2022 12:19:40.437 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/ROOT]
+13-Oct-2022 12:19:40.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/ROOT] has finished in [15] ms
+13-Oct-2022 12:19:40.452 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/examples]
+13-Oct-2022 12:19:40.590 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/examples] has finished in [138] ms
+13-Oct-2022 12:19:40.591 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Oct-2022 12:19:40.598 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [394] milliseconds
+13-Oct-2022 12:20:37.980 INFO [http-nio-8080-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/my-app-1.0-SNAPSHOT.war]
+13-Oct-2022 12:20:38.005 INFO [http-nio-8080-exec-7] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/my-app-1.0-SNAPSHOT.war] has finished in [25] ms
+13-Oct-2022 12:40:42.303 INFO [http-nio-8080-exec-6] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/my-app-1.0-SNAPSHOT]
+13-Oct-2022 12:41:13.381 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/my-app-1.0-SNAPSHOT.war]
+13-Oct-2022 12:41:13.406 INFO [http-nio-8080-exec-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/my-app-1.0-SNAPSHOT.war] has finished in [25] ms
+13-Oct-2022 12:44:16.661 INFO [http-nio-8080-exec-18] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/my-app-1.0-SNAPSHOT]
+13-Oct-2022 12:44:38.153 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/my-app-1.0-SNAPSHOT.war]
+13-Oct-2022 12:44:38.189 INFO [http-nio-8080-exec-13] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/my-app-1.0-SNAPSHOT.war] has finished in [35] ms
+13-Oct-2022 12:57:35.717 INFO [http-nio-8080-exec-26] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/my-app-1.0-SNAPSHOT]
+13-Oct-2022 12:57:47.607 INFO [http-nio-8080-exec-25] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/my-app-1.0-SNAPSHOT.war]
+13-Oct-2022 12:57:47.635 INFO [http-nio-8080-exec-25] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/my-app-1.0-SNAPSHOT.war] has finished in [29] ms
+13-Oct-2022 13:04:25.222 INFO [http-nio-8080-exec-36] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/my-app-1.0-SNAPSHOT]
+13-Oct-2022 13:04:36.396 INFO [http-nio-8080-exec-33] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/my-app-1.0-SNAPSHOT.war]
+13-Oct-2022 13:04:36.407 INFO [http-nio-8080-exec-33] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/pedrocoelho5/Desktop/Universidade/IES/IES_104247/lab2/apache-tomcat-9.0.68/webapps/my-app-1.0-SNAPSHOT.war] has finished in [11] ms
+13-Oct-2022 13:53:43.176 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+13-Oct-2022 13:53:43.177 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Oct-2022 13:53:43.178 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+13-Oct-2022 13:53:43.197 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Oct-2022 13:53:43.203 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
