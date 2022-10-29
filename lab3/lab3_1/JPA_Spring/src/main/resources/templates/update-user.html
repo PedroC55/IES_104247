@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title></title>
+  </head>
+  <body>
+      <form action="#" 
+          th:action="@{/update/{id}(id=${user.id})}" 
+          th:object="${user}" 
+          method="post">
+              <label for="name">Name</label>
+              <input type="text" th:field="*{name}" id="name" placeholder="Name">
+              <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+              <label for="email">Email</label>
+              <input type="text" th:field="*{email}" id="email" placeholder="Email">
+              <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+              <label for="phone">Phone</label>
+              <input type="number" th:field="*{phone}" id="phone" placeholder="Phone">
+              <span th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></span>
+              <input type="submit" value="Update User">   
+      </form>
+  </body>
+</html>
